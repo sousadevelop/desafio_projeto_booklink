@@ -1,0 +1,111 @@
+/*Variáveis*/
+:root {
+    --azul: #00ff00;
+    --preto: #141414;
+}
+
+
+/*WRAPPER = ENVELOPAR*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body {
+    background: var(--preto);
+    font-family: Times, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--azul);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*Livro principal*/
+.livro_principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/img/historia_do_cristianismo.png');
+
+    height: 1000px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.livro_principal .descricao {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.livro_principal .titulo {
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 12px;
+
+    border-radius: 5%;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.livro_principal .container {
+    width: 80%;
+}
+
+.box-livro {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-livros {
+    margin-top: none;
+}
